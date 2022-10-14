@@ -6,12 +6,8 @@ import javax.swing.JFrame
 import javax.swing.JOptionPane
 import javax.swing.SwingUtilities
 
-fun main() {
-    TelaPrincipal()
-}
-
 class TelaPrincipal : JFrame() {
-    private val tabuleiro = Tabuleiro(qtdeLinhas = 16, qtdeColunas = 30, qtdeMinas = 2)
+    private val tabuleiro = Tabuleiro(qtdeLinhas = 16, qtdeColunas = 30, qtdeMinas = 20)
     private val painelTabuleiro= PainelTabuleiro(tabuleiro)
 
     init {
